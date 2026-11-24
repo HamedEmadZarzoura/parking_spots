@@ -17,7 +17,7 @@ Detects which parking spots are free in a parking-lot video and shows the count 
 ## Dependencies (from the imports)
 opencv-python, numpy, matplotlib, scikit-image. The type of model stored in model.p is not shown in this repo; the code only calls its predict method.
 
-## Run (from the code, not tested)
+## Run
 ```
 python main.py
 ```
@@ -28,3 +28,5 @@ Run it from the repo folder: the paths to mask.png, parking.mp4 and model.p are 
 - model.p is a Python pickle. Only load pickles you trust, because loading an untrusted one can run code.
 - The code that trained model.p is not in this repo.
 - The script uses one fixed video and one mask.
+- The script stops cleanly when the video ends.
+- Tested only with a synthetic classifier and video (Python 3.10, OpenCV 4.9.0.80, numpy 1.26.4, scikit-image 0.25.2). The included model.p was not loaded in that test.
