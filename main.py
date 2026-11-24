@@ -34,6 +34,8 @@ ret = True
 
 while ret:
     ret, frame = cap.read()
+    if not ret:
+        break
     if frame_nmr % step == 0 and previous_frame is not None:
         for spot_indx, spot in enumerate(spots):
             x1, y1, w, h = spot
