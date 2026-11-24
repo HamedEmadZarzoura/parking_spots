@@ -9,13 +9,19 @@ Detects which parking spots are free in a parking-lot video and shows the count 
 - Spots are drawn green (empty) or red (not empty), with "Available spots: X / N" on screen. Press q to quit.
 
 ## Files
-main.py, util.py, mask.png, mask_crop.png, parking.mp4, parking_crop.mp4, video.mp4, model.p
+- main.py, util.py
+- mask.png, mask_crop.png
+- parking.mp4, parking_crop.mp4, video.mp4
+- model.p
 
 ## Dependencies (from the imports)
 opencv-python, numpy, matplotlib, scikit-image. The type of model stored in model.p is not shown in this repo; the code only calls its predict method.
 
 ## Run (from the code, not tested)
+```
 python main.py
+```
+
 Run it from the repo folder: the paths to mask.png, parking.mp4 and model.p are relative.
 
 ## Notes
